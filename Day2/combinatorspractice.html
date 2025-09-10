@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1{
+            color:brown;
+        }
+        h1+h2{
+            color:aquamarine;
+        }
+        /* .child>h2{
+            color: blue;
+        } */
+         .child>h2{
+            color: yellowgreen;
+         }
+         .sub-child>h2{
+            color: forestgreen;
+         }
+         .parent>.child>h2{
+            color: hotpink;
+         }
+         .parent>.child>.sub-child>h2{
+            color: tomato;
+         }
+         .child1>h1{
+            color: fuchsia
+         }
+         .sub-child~.child1>h1{
+            color: red;
+         }
+         .parent~.parent1>h2{
+            color: darkgreen;
+         }
+         .parent1 .child-parent1>h1{
+            color: firebrick;
+         }
+         .parent1>h3{
+            color: red;
+         }
+         h1+h2{
+            color: red;
+         }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Tiger</h1>
+        <h2>Lion</h2>
+        <div class="child">
+            <h2>Donkey</h2>
+            <div class="sub-child">
+                <h2>Monkey</h2>
+            </div>
+            <div class="child1">
+                <h1>Chimpanjee</h1>
+            </div>
+        </div>
+    </div>
+    <div class="parent1">
+        <h2>Horse</h2>
+        <div class="child-parent1">
+            <h1>Dog</h1>
+        </div>
+        <h3>53r batch</h3>
+    </div>
+    
+</body>
+</html>
